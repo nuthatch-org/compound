@@ -1,0 +1,801 @@
+{
+  "registry_hash": "0xa29994ae9999dc7ec2202eab4580bcba37ee5c30b3888779c9e474f3c4abd68e",
+  "tables": [
+    {
+      "alias": "c0",
+      "columns": [
+        {
+          "indexed": false,
+          "name": "block_number",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "block_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "block_timestamp",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "tx_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "log_index",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "address",
+          "sol_type": "implicit",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_seq",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": true,
+          "name": "absorber",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": true,
+          "name": "borrower",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": true,
+          "name": "asset",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "collateralAbsorbed",
+          "sol_type": "uint256",
+          "storage": "word32"
+        },
+        {
+          "indexed": false,
+          "name": "usdValue",
+          "sol_type": "uint256",
+          "storage": "word32"
+        }
+      ],
+      "event": "AbsorbCollateral(address,address,address,uint256,uint256)",
+      "table": "c0__absorb_collateral",
+      "topic0": "0x9850ab1af75177e4a9201c65a2cf7976d5d28e40ef63494b44366f86b2f9412e"
+    },
+    {
+      "alias": "c0",
+      "columns": [
+        {
+          "indexed": false,
+          "name": "block_number",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "block_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "block_timestamp",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "tx_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "log_index",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "address",
+          "sol_type": "implicit",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_seq",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": true,
+          "name": "absorber",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": true,
+          "name": "borrower",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "basePaidOut",
+          "sol_type": "uint256",
+          "storage": "word32"
+        },
+        {
+          "indexed": false,
+          "name": "usdValue",
+          "sol_type": "uint256",
+          "storage": "word32"
+        }
+      ],
+      "event": "AbsorbDebt(address,address,uint256,uint256)",
+      "table": "c0__absorb_debt",
+      "topic0": "0x1547a878dc89ad3c367b6338b4be6a65a5dd74fb77ae044da1e8747ef1f4f62f"
+    },
+    {
+      "alias": "c0",
+      "columns": [
+        {
+          "indexed": false,
+          "name": "block_number",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "block_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "block_timestamp",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "tx_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "log_index",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "address",
+          "sol_type": "implicit",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_seq",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": true,
+          "name": "buyer",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": true,
+          "name": "asset",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "baseAmount",
+          "sol_type": "uint256",
+          "storage": "word32"
+        },
+        {
+          "indexed": false,
+          "name": "collateralAmount",
+          "sol_type": "uint256",
+          "storage": "word32"
+        }
+      ],
+      "event": "BuyCollateral(address,address,uint256,uint256)",
+      "table": "c0__buy_collateral",
+      "topic0": "0xf891b2a411b0e66a5f0a6ff1368670fefa287a13f541eb633a386a1a9cc7046b"
+    },
+    {
+      "alias": "c0",
+      "columns": [
+        {
+          "indexed": false,
+          "name": "block_number",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "block_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "block_timestamp",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "tx_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "log_index",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "address",
+          "sol_type": "implicit",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_seq",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "supplyPaused",
+          "sol_type": "bool",
+          "storage": "bool"
+        },
+        {
+          "indexed": false,
+          "name": "transferPaused",
+          "sol_type": "bool",
+          "storage": "bool"
+        },
+        {
+          "indexed": false,
+          "name": "withdrawPaused",
+          "sol_type": "bool",
+          "storage": "bool"
+        },
+        {
+          "indexed": false,
+          "name": "absorbPaused",
+          "sol_type": "bool",
+          "storage": "bool"
+        },
+        {
+          "indexed": false,
+          "name": "buyPaused",
+          "sol_type": "bool",
+          "storage": "bool"
+        }
+      ],
+      "event": "PauseAction(bool,bool,bool,bool,bool)",
+      "table": "c0__pause_action",
+      "topic0": "0x3be39979091ae7ca962aa1c44e645f2df3c221b79f324afa5f44aedc8d2f690d"
+    },
+    {
+      "alias": "c0",
+      "columns": [
+        {
+          "indexed": false,
+          "name": "block_number",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "block_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "block_timestamp",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "tx_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "log_index",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "address",
+          "sol_type": "implicit",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_seq",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": true,
+          "name": "from",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": true,
+          "name": "dst",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "sol_type": "uint256",
+          "storage": "word32"
+        }
+      ],
+      "event": "Supply(address,address,uint256)",
+      "table": "c0__supply",
+      "topic0": "0xd1cf3d156d5f8f0d50f6c122ed609cec09d35c9b9fb3fff6ea0959134dae424e"
+    },
+    {
+      "alias": "c0",
+      "columns": [
+        {
+          "indexed": false,
+          "name": "block_number",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "block_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "block_timestamp",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "tx_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "log_index",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "address",
+          "sol_type": "implicit",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_seq",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": true,
+          "name": "from",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": true,
+          "name": "dst",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": true,
+          "name": "asset",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "sol_type": "uint256",
+          "storage": "word32"
+        }
+      ],
+      "event": "SupplyCollateral(address,address,address,uint256)",
+      "table": "c0__supply_collateral",
+      "topic0": "0xfa56f7b24f17183d81894d3ac2ee654e3c26388d17a28dbd9549b8114304e1f4"
+    },
+    {
+      "alias": "c0",
+      "columns": [
+        {
+          "indexed": false,
+          "name": "block_number",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "block_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "block_timestamp",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "tx_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "log_index",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "address",
+          "sol_type": "implicit",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_seq",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": true,
+          "name": "from",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "sol_type": "uint256",
+          "storage": "word32"
+        }
+      ],
+      "event": "Transfer(address,address,uint256)",
+      "table": "c0__transfer",
+      "topic0": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+    },
+    {
+      "alias": "c0",
+      "columns": [
+        {
+          "indexed": false,
+          "name": "block_number",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "block_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "block_timestamp",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "tx_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "log_index",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "address",
+          "sol_type": "implicit",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_seq",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": true,
+          "name": "from",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": true,
+          "name": "asset",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "sol_type": "uint256",
+          "storage": "word32"
+        }
+      ],
+      "event": "TransferCollateral(address,address,address,uint256)",
+      "table": "c0__transfer_collateral",
+      "topic0": "0x29db89d45e1a802b4d55e202984fce9faf1d30aedf86503ff1ea0ed9ebb64201"
+    },
+    {
+      "alias": "c0",
+      "columns": [
+        {
+          "indexed": false,
+          "name": "block_number",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "block_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "block_timestamp",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "tx_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "log_index",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "address",
+          "sol_type": "implicit",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_seq",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": true,
+          "name": "src",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "sol_type": "uint256",
+          "storage": "word32"
+        }
+      ],
+      "event": "Withdraw(address,address,uint256)",
+      "table": "c0__withdraw",
+      "topic0": "0x9b1bfa7fa9ee420a16e124f794c35ac9f90472acc99140eb2f6447c714cad8eb"
+    },
+    {
+      "alias": "c0",
+      "columns": [
+        {
+          "indexed": false,
+          "name": "block_number",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "block_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "block_timestamp",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "tx_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "log_index",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "address",
+          "sol_type": "implicit",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_seq",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": true,
+          "name": "src",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": true,
+          "name": "asset",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "sol_type": "uint256",
+          "storage": "word32"
+        }
+      ],
+      "event": "WithdrawCollateral(address,address,address,uint256)",
+      "table": "c0__withdraw_collateral",
+      "topic0": "0xd6d480d5b3068db003533b170d67561494d72e3bf9fa40a266471351ebba9e16"
+    },
+    {
+      "alias": "c0",
+      "columns": [
+        {
+          "indexed": false,
+          "name": "block_number",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "block_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "block_timestamp",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "tx_hash",
+          "sol_type": "implicit",
+          "storage": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "log_index",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": false,
+          "name": "address",
+          "sol_type": "implicit",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_seq",
+          "sol_type": "implicit",
+          "storage": "u64"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "sol_type": "address",
+          "storage": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "sol_type": "uint256",
+          "storage": "word32"
+        }
+      ],
+      "event": "WithdrawReserves(address,uint256)",
+      "table": "c0__withdraw_reserves",
+      "topic0": "0xec4431f2ba1a9382f6b0c4352b888cba6f7db91667d9f776abe5ad8ddc5401b6"
+    }
+  ]
+}
