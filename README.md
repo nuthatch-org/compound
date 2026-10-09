@@ -1,6 +1,6 @@
 # compound
 
-A [nuthatch](https://github.com/nightswatchhq/nuthatch) nest: **Compound III (Comet) USDC on Ethereum**.
+A [nuthatch](https://github.com/nuthatch-org/nuthatch) nest: **Compound III (Comet) USDC on Ethereum**.
 
 Supplies, withdrawals, absorptions and collateral movements.
 
@@ -21,7 +21,7 @@ Indexed blocks **25,791,624 to 25,811,560** and sealed **876 events**. Every tab
 ## Run it
 
 ```sh
-nuthatch init --from https://github.com/nightswatchhq/compound
+nuthatch init --from https://github.com/nuthatch-org/compound
 cd compound
 nuthatch dev --dir . --backfill 50000 --seal-direct
 nuthatch sql --dir . "SELECT count(*) FROM \"c0__absorb_collateral\""
